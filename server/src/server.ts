@@ -2,8 +2,8 @@ import express, { response } from 'express';
 
 const app = express();
 
-app.get('/ads', (req, res) => {
-    return res.json([
+app.get('/ads', (request, response) => {
+    return response.json([
         {id: 1, title: 'Ad 1'},
         {id: 2, title: 'Ad 2'},
         {id: 3, title: 'Ad 3'},
